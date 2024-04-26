@@ -48,9 +48,8 @@ public class Principal {
                         conversionMonedas = new ConversionMonedas(codigo1,codigo2,montoString);
                         json = conversionMonedas.getRespuestaJson();
                         conversion = gson.fromJson(json, Conversion.class);
-                        System.out.println("El monto de " + montoString + " dolares americanos son: ");
-                        System.out.println(conversion + " pesos argentinos");
-
+                        System.out.println("El monto de " + montoString + " dolares americanos");
+                        System.out.println("son: " + conversion.conversion_result() + " pesos argentinos");
                         //conversion = gson.fromJson(json, ResultadosConversion.class);
                         //System.out.println("prueba" + Conversion.getcodigoBase());
                         //JsonObject jsonObject =gson.fromJson(json, JsonObject.class);
@@ -79,7 +78,7 @@ public class Principal {
                         json = conversionMonedas.getRespuestaJson();
                         conversion = gson.fromJson(json, Conversion.class);
                         System.out.println("El monto de " + montoString + " dolares americanos son: ");
-                        System.out.println(conversion + " reales brasileños");
+                        System.out.println("son: " + conversion.conversion_result() + " reales brasileños");
                     } catch (IOException | InterruptedException e) {
                         throw new RuntimeException(e);
                     }
@@ -94,7 +93,7 @@ public class Principal {
                         json = conversionMonedas.getRespuestaJson();
                         conversion = gson.fromJson(json, Conversion.class);
                         System.out.println("El monto de " + montoString + " dolares americanos son: ");
-                        System.out.println(conversion + " pesos chilenos");
+                        System.out.println("son: " + conversion.conversion_result() + " pesos chilenos");
                     } catch (IOException | InterruptedException e) {
                         throw new RuntimeException(e);
                     }
@@ -109,7 +108,7 @@ public class Principal {
                         json = conversionMonedas.getRespuestaJson();
                         conversion = gson.fromJson(json, Conversion.class);
                         System.out.println("El monto de " + montoString + " pesos argentinos son: ");
-                        System.out.println(conversion + " dolares americanos");
+                        System.out.println("son: " + conversion.conversion_result() + " dolares americanos");
                     } catch (IOException | InterruptedException e) {
                         throw new RuntimeException(e);
                     }
@@ -124,7 +123,7 @@ public class Principal {
                         json = conversionMonedas.getRespuestaJson();
                         conversion = gson.fromJson(json, Conversion.class);
                         System.out.println("El monto de " + montoString + " pesos argentinos son: ");
-                        System.out.println(conversion + " reales brasileños");
+                        System.out.println("son: " + conversion.conversion_result() + " reales brasileños");
                     } catch (IOException | InterruptedException e) {
                         throw new RuntimeException(e);
                     }
@@ -139,7 +138,7 @@ public class Principal {
                         json = conversionMonedas.getRespuestaJson();
                         conversion = gson.fromJson(json, Conversion.class);
                         System.out.println("El monto de " + montoString + " pesos argentinos son: ");
-                        System.out.println(conversion + " pesos chilenos");
+                        System.out.println("son: " + conversion.conversion_result() + " pesos chilenos");
                     } catch (IOException | InterruptedException e) {
                         throw new RuntimeException(e);
                     }
@@ -154,7 +153,7 @@ public class Principal {
                         json = conversionMonedas.getRespuestaJson();
                         conversion = gson.fromJson(json, Conversion.class);
                         System.out.println("El monto de " + montoString + " reales brasileños son: ");
-                        System.out.println(conversion + " dolares americanos");
+                        System.out.println("son: " + conversion.conversion_result() + " dolares americanos");
                     } catch (IOException | InterruptedException e) {
                         throw new RuntimeException(e);
                     }
@@ -169,7 +168,7 @@ public class Principal {
                         json = conversionMonedas.getRespuestaJson();
                         conversion = gson.fromJson(json, Conversion.class);
                         System.out.println("El monto de " + montoString + " reales brasileños son: ");
-                        System.out.println(conversion + " pesos argentinos");
+                        System.out.println("son: " + conversion.conversion_result() + " pesos argentinos");
                     } catch (IOException | InterruptedException e) {
                         throw new RuntimeException(e);
                     }
